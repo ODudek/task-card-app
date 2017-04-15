@@ -1,4 +1,4 @@
-<div class="col-sm-3">
+<div class="col-sm-3" [hidden]="task.deleted">
   <div class="card" (click)="statusTaskToggle()" [class.completed]="task.completed">
     <div class="card-block">
       <p>{{task.content}}</p>
@@ -8,4 +8,8 @@
       <span [hidden]="!task.completed"><i class="fa fa-check" aria-hidden="true"></i>Completed</span>
     </div>
   </div>
+  <span>
+  <button type="submit" class="btn btn-primary" (click)="deleteTask()">
+    <i class="fa fa-trash" aria-hidden="true"></i>Delete Task</button>
+  </span>
 </div>

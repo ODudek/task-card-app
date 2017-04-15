@@ -20,7 +20,31 @@
   text-align: right;
 }
 
-i {
+.card-footer i {
   color: #cc0000;
   padding-right: .5rem;
+}
+
+span {
+  margin-left: 4rem;
+}
+
+.btn,
+.btn:disabled:hover {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+i {
+  padding-right: .5rem;
+
+}
+
+.btn:hover {
+  background-color: #790000;
+  border-color: #790000;
+}
+
+.btn:focus {
+  outline: 0;
 }
