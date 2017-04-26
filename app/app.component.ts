@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Task} from './model/task';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['app.component.css']
@@ -15,5 +16,4 @@ export class AppComponent {
     this.tasks.push(task);
     this.currentTask.content = null;
   }
-
 }
